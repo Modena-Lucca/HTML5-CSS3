@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir essas imagens em tamanhos de telas idferentes</p>
+    <picture>
+        <source media="(max-width:1200px)" srcset="./image/P.png" type="image/png">
+        <source media="(max-width:1500px)" srcset="./image/M.png" type="image/png">
+        <img src="./image/G.png" alt="Imagem felxível">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir midia</p>
+    <audio src="media/house_lo.mp3" controls preload="metadata" loop></audio>
+    <!--MP3 WAV OGG-->
+    <audio>
+        <source src="media/house_lo.wav" type="audio/wav">
+    </audio>
+
+    <h1>Inserindo videos hospedados localmente (custo elevado)</h1>
+    <video src="video/12919539_1280_720_60fps.mp4" width="500px" controls>
+        <!--Utilizar os Sources igual o audío m4v/webm/ogv/mp4-->
+    </video>
+
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tLZjL-dMH_g?si=aY8HyEwqQ2xHLlYK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
