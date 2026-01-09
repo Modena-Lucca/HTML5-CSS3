@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Edu QLD Hand", cursive, Verdana, Geneva, Tahoma, sans-serif;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -19,6 +25,7 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte1);
 
 }
 
@@ -40,6 +47,11 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte2);
+}
+
+section > p{
+    padding-bottom: 32px;
 }
 .normal{
     background-color: white;
@@ -49,11 +61,25 @@ section{
 .imagem{
     background-color: black;
     color:white;
+    box-shadow: 6px 6px 13px 0px black ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right bottom;
 }
 
 .imagem > p{
-    background-color: rgba(128, 128, 128, 0.399);
-    width: 250px;
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px black;
 }
 
 footer{
@@ -61,4 +87,5 @@ footer{
     text-align: center;
     color: white;
     padding: 3px;
+    font-family: var(--fonte1);
 }
