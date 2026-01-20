@@ -43,7 +43,8 @@ menu > ul > li > a{
     text-decoration: none;
     text-align: center;
     background-color: rgb(78, 78, 78);
-    border-top: 2px solid black;
+    border-top: 1px solid rgba(0, 0, 0, 0.264);
+    color: white;
 }
 
 menu > ul > li > a:hover{
