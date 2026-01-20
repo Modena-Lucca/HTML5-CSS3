@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/*Typical device breqakpoint
+pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+TV: acima de 1200px
+*/
+
+
+/*Todas as demais medias*/
+@media print{
+    main{
+        border: 2px solid black;
+    }
+    h1{
+        color: black;
+        text-shadow: none;
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+}
+
+/* Já feito no Mobile Firts
+@media screen and (max-width: 600px){
+    
+}
+
+@media screen and (min-width:600px) and (max-with:768px) {
+    
+}
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: url(../images/back-tablet.jpg);
+        
+    }
+    #phone{display: none;}
+    #tablet{display: block;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: none;}
+
+}
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    body{
+        background-image: url(../images/back-pc.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../images/back-tv.jpg);
+    }
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+}
